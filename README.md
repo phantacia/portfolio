@@ -14,8 +14,8 @@ I am a passionate web developer with a relentless pursuit of knowledge and innov
 ## Contact
 
 - Email: [phantacias@gmail.com](mailto:phantacias@gmail.com)
-- GitHub: [Your GitHub Profile](https://github.com/phantacia)
-- Portfolio Website: [Your Portfolio Website](https://phantacia.vercel.app/)
+- GitHub: [Phantacia](https://github.com/phantacia)
+- Portfolio Website: [phantacia.vercel.app](https://phantacia.vercel.app/)
 
 Feel free to reach out to me for collaboration, job opportunities, or just to say hello!
 
