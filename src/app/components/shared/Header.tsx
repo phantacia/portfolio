@@ -7,11 +7,12 @@ import MainLogo from "../icons/MainLogo";
 import gsap from "gsap";
 
 const Header = () => {
-  const logoRef = useRef(null);
+  const logoRef = useRef<HTMLAnchorElement | null>(null);
 
   const onLogoEnter = () => {
-    const currentColor = logoRef.current.getAttribute("data-color");
-    const logoSvg = logoRef.current.firstChild.firstChild;
+    const currentColor =
+      logoRef.current?.getAttribute("data-color") ?? "#c94940";
+    const logoSvg = logoRef.current?.firstChild?.firstChild as SVGElement;
 
     const nextColor =
       currentColor === "#c94940"
@@ -20,14 +21,22 @@ const Header = () => {
         ? "#2c6cad"
         : "#c94940";
 
-    logoRef.current.setAttribute("data-color", nextColor);
+    logoRef.current?.setAttribute("data-color", nextColor);
 
-    gsap.to(logoSvg, { fill: currentColor, duration: 0.2, ease: "power1.out" });
+    gsap.to(logoSvg, {
+      fill: currentColor,
+      duration: 0.2,
+      ease: "power1.out",
+    });
   };
 
   const onLogoLeave = () => {
-    const logoSvg = logoRef.current.firstChild.firstChild;
-    gsap.to(logoSvg, { fill: "#171717", duration: 0.2, ease: "power1.out" });
+    const logoSvg = logoRef.current?.firstChild?.firstChild as SVGElement;
+    gsap.to(logoSvg, {
+      fill: "#171717",
+      duration: 0.2,
+      ease: "power1.out",
+    });
   };
 
   return (
