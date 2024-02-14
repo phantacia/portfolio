@@ -10,7 +10,7 @@ const Projects = () => {
       <Banner>Selected Projects</Banner>
       <div className="px-10 py-5 w-full justify-center items-center flex flex-col md:flex-row gap-5">
         {/* Project 1 */}
-        <div className="w-full md:w-[500px] h-96 overflow-hidden p-2 border-2 border-text rounded-xl flex flex-col gap-3">
+        <div className="w-full md:w-[500px] h-[410px] md:h-96 overflow-hidden p-2 border-2 border-text rounded-xl flex flex-col gap-3">
           <Link href="https://hanazakari.vercel.app/" target="_blank">
             <Image
               src="/thumbnail/hanazakari.webp"
@@ -32,7 +32,7 @@ const Projects = () => {
               Personal project
             </span>
             <p>Built with:</p>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-wrap">
               <TagsButton>Next.js</TagsButton>
               <TagsButton>Tailwind CSS</TagsButton>
               <TagsButton>Framer Motion</TagsButton>
@@ -41,7 +41,7 @@ const Projects = () => {
         </div>
 
         {/* Project 2 */}
-        <div className="w-full md:w-[500px] h-96 overflow-hidden p-2 border-2 border-text rounded-xl flex flex-col gap-3">
+        <div className="w-full md:w-[500px] h-[410px] md:h-96 overflow-hidden p-2 border-2 border-text rounded-xl flex flex-col gap-3">
           <Link href="https://seize-the-day-todo.vercel.app/" target="_blank">
             <Image
               src="/thumbnail/todo.webp"
@@ -63,7 +63,7 @@ const Projects = () => {
               Personal project
             </span>
             <p>Built with:</p>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-wrap">
               <TagsButton>React.js</TagsButton>
               <TagsButton>Tailwind CSS</TagsButton>
             </div>
