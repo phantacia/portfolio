@@ -8,7 +8,7 @@ const Footer = () => {
       id="contact"
       className="px-10 py-4 bg-text w-full text-background flex flex-col justify-center items-center md:items-stretch gap-3"
     >
-      <div className="border-b-2 border-background flex flex-col gap-3 md:flex-row items-center text-center md:justify-between">
+      <div className="border-b-2 border-background flex flex-col gap-3 xl:flex-row items-center text-center md:justify-between">
         <h3 className="text-primary font-cursive text-4xl md:text-5xl">
           Let&apos;s work together
         </h3>

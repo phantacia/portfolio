@@ -6,7 +6,9 @@ const Skills = () => {
     <div className="w-full">
       <div className="flex flex-col gap-3 md:grid grid-cols-4 grid-rows-2">
         <div className="row-span-2 justify-center items-center flex">
-          <span className="font-cursive text-primary text-5xl">My skills.</span>
+          <span className="font-cursive text-primary text-5xl text-center">
+            My skills.
+          </span>
         </div>
         <div className="flex flex-col gap-2 items-center justify-center">
           <h2 className="text-center text-lg md:text-xl font-semibold">
